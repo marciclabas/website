@@ -4,8 +4,8 @@ import { notion } from '../../lib/notion'
 import NotionPage from '../../lib/NotionPage'
 import 'react-notion-x/src/styles.css'
 
-export default async function AboutPage() {
-  const pageId = 'a5ba59ca631044be9debd34edf8789dc'
+export default async function CVPage() {
+  const pageId = '8682129797a74c84945b3272974f44ba'
   let recordMap: ExtendedRecordMap
 
   try {

@@ -15,10 +15,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className='min-h-screen flex flex-col'>
         <header className='bg-gray-800 p-4 shadow-md'>
           <nav className='container mx-auto flex justify-between items-center'>
-            <a className='text-xl font-bold' href='/'>Marcel</a>
+            <a className='text-xl font-bold' href='/'>Marcel Claramunt</a>
             <ul className='flex space-x-4'>
               <li>
                 <a href='/' className='hover:text-blue-300'>Home</a>
+              </li>
+              <li>
+                <a href='/cv' className='hover:text-blue-300'>CV</a>
               </li>
               <li>
                 <a href='/about' className='hover:text-blue-300'>About</a>
