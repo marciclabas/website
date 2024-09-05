@@ -1,5 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: 'Marcel Claramunt',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel='icon' href='/favicon.png' />
       </head>
       <body className='min-h-screen flex flex-col'>
+        <Analytics />
         <header className='bg-gray-800 p-4 shadow-md'>
           <nav className='container mx-auto flex justify-between items-center'>
             <a className='text-xl font-bold' href='/'>Marcel Claramunt</a>
