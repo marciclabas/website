@@ -1,12 +1,9 @@
 'use client'
 import { NotionRenderer } from 'react-notion-x'
-import { ExtendedRecordMap } from 'notion-types'
 
-export type Props = {
-  recordMap: ExtendedRecordMap
-}
-export function Renderer({ recordMap }: Props) {
-  return <NotionRenderer recordMap={recordMap} darkMode={true} />
+export type Props = Parameters<typeof NotionRenderer>[0]
+export function Renderer(props: Props) {
+  return <NotionRenderer darkMode={true} {...props} />
 }
 
 export default Renderer
