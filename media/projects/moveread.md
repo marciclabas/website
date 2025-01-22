@@ -1,5 +1,5 @@
 <a href="https://moveread.com" target="_blank" style="display: flex; align-items: center; gap: 1rem;">
-  <img src="/website/media/projects/moveread-logo.png" width="64" height="64" style="border-radius: 100%" />
+  <img src="https://marcelc.uk/media/projects/moveread-logo.png" width="64" height="64" style="border-radius: 100%" />
   <h1 style="font-size: 2.5rem;">Moveread</h1>
 </a>
 
