@@ -1,0 +1,30 @@
+html, body {
+  overscroll-behavior: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --brand-color: #f0b90b;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--brand-color);
+}
+
+body a {
+  color: var(--text-color);
+}
