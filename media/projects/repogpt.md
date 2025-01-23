@@ -1,5 +1,5 @@
 <a href="https://repogpt.marcelc.uk" target="_blank" style="display: flex; align-items: center; gap: 1rem;">
-  <img src="https://marcelc.uk/media/projects/repogpt-logo.png" width="64" height="64" style="border-radius: 100%" />
+  <img src="https://marcelc.uk/media/projects/repogpt-logo-256.png" width="64" height="64" style="border-radius: 100%" />
   <h1 style="font-size: 2.5rem;">RepoGPT</h1>
 </a>
 
