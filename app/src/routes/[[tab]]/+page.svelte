@@ -1,11 +1,13 @@
-<!-- svelte-ignore a11y_consider_explicit_label -->
+<!-- svelte-ignore a11y_consider_explicit_label  -->
 
-<script lang="ts">
+<script lang='ts'>
 	import type { PageProps } from './$types'
   import { goto } from '$app/navigation';
   import { base } from '$app/paths';
   import Expertise from './Expertise.svelte';
 	const { data }: PageProps = $props()
+
+  import EntrepreneurImg from './entrepreneur.jpg?enhanced';
 </script>
 
 <!-- Tab Navigation -->
@@ -20,7 +22,7 @@
   {#if data.tab === 'musician'}
     <div>
       <a href='https://www.instagram.com/reel/DEstDHYtMoy/' target='_blank'>
-        <video src={`${base}/media/jazz.mp4`} autoplay loop muted class='vertical-video'></video>
+        <video src={`${base}/media/jazz.mp4`} controls autoplay loop muted preload="none" class='vertical-video'></video>
       </a>
       <div class='quick-links'>
         <p>Jazz Piano and Catalan Folklore.</p>
@@ -30,7 +32,7 @@
   {:else if data.tab === 'athlete'}
     <div>
       <a href='https://www.instagram.com/reel/DFD0N5ItTl9/' target='_blank'>
-        <video src={`${base}/media/calisthenics.mp4`} autoplay loop muted class='vertical-video'></video>
+        <video src={`${base}/media/calisthenics.mp4`} controls autoplay loop muted preload="none" class='vertical-video'></video>
       </a>
       <p>Calisthenics, Running and Volleyball.</p>
       <div class='quick-links'>
@@ -39,7 +41,7 @@
     </div>
   {:else}
     <div>
-      <img src={`${base}/media/entrepreneur.jpg`} alt='Marcel playing chess' />
+      <enhanced:img src={EntrepreneurImg} alt='Marcel playing chess' width="100%" />
       <p class='description'>Freelancer and Entrepreneur. AI & Full-Stack Developer.</p>
       <Expertise />
       <a href={`${base}/hire`} class='hire-button'>Hire Me</a>

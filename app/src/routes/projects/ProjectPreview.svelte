@@ -1,13 +1,21 @@
+<script lang="ts" module>
+   export type Props = {
+    title: string
+    description: string
+    image: Snippet
+    id: string
+  }
+
+</script>
+
 <script lang='ts'>
   import { base } from '$app/paths'
-  import type { Project } from './projects'
-
-  const { title, description, image, id }: Project = $props();
-  const imageUrl = image.startsWith('/') ? `${base}${image}` : image
+  import type { Snippet } from 'svelte';
+  const { title, description, image, id }: Props = $props();
 </script>
 
 <div class='project-preview'>
-  <img class='project-image' src={imageUrl} alt={title} />
+  {@render image()}
   <div class='project-info'>
     <h2 class='project-title'>{title}</h2>
     <p class='project-description'>{description}</p>

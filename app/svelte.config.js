@@ -11,9 +11,9 @@ const config = {
       assets: 'build',
 			// fallback: 'build/index.html'
 		}),
-		paths: {
-			base: '/website',
-		},
+		// paths: {
+		// 	base: '/website',
+		// },
 		appDir: 'app_'
 	},
 };

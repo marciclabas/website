@@ -62,6 +62,12 @@
     margin-bottom: 40px;
   }
 
+  @media (max-width: 700px) {
+    .hire-buttons {
+      flex-direction: column;
+    }
+  }
+
   .hire-button {
     display: flex;
     align-items: center;
