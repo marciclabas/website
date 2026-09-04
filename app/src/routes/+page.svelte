@@ -41,7 +41,7 @@
 </script>
 
 <section class="hero">
-  <h1>I build the infrastructure I couldn&rsquo;t buy.</h1>
+  <h1>Marcel Claramunt</h1>
   <p class="lede">
     Founder and CEO of <a href="https://tribulnation.com">Tribulnation Labs</a>, a proprietary
     trading firm in Barcelona. Before that I built an AI company that read handwritten chess

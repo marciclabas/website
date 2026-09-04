@@ -1,8 +1,13 @@
 <script lang="ts">
   import './index.css'
   import { base } from '$app/paths'
+  import { page } from '$app/state'
 
   const { children } = $props()
+
+  // On the homepage the <h1> is the wordmark, so repeating it in the header
+  // just says the same words twice within 200px.
+  const isHome = $derived(page.url.pathname.replace(/\/$/, '') === base)
   const year = new Date().getFullYear()
 </script>
 
@@ -16,7 +21,11 @@
 
 <div class="shell">
   <header>
-    <a class="wordmark" href="{base}/">Marcel Claramunt</a>
+    {#if isHome}
+      <span></span>
+    {:else}
+      <a class="wordmark" href="{base}/">Marcel Claramunt</a>
+    {/if}
     <nav>
       <a href="{base}/timeline">Timeline</a>
       <a href="mailto:marcel@marcelc.uk">Email</a>
