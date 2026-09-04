@@ -108,6 +108,7 @@
   </p>
   <p class="prose quiet">
     Volleyball, calisthenics, and enough chess to have once built a company about it.
+    <a href="https://ratings.fide.com/profile/32086512">2144 FIDE</a>.
   </p>
 </section>
 
@@ -183,6 +184,17 @@
 
   .quiet {
     color: var(--muted);
+  }
+
+  .prose a {
+    color: inherit;
+    box-shadow: inset 0 -1px 0 var(--rule);
+    transition: box-shadow 0.15s ease, color 0.15s ease;
+  }
+
+  .prose a:hover {
+    color: var(--ink);
+    box-shadow: inset 0 -1px 0 var(--accent);
   }
 
   .work {
