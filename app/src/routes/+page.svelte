@@ -12,7 +12,7 @@
 
   const work: Entry[] = [
     {
-      period: '2024 —',
+      period: '2025 —',
       name: 'Tribulnation Labs',
       role: 'Founder & CEO',
       body: 'A proprietary trading firm in Barcelona. We trade our own book and open source the stack underneath it.',
@@ -264,6 +264,11 @@
 
   .more a:hover {
     color: var(--accent);
+  }
+
+  .more .mark {
+    font-size: 1em;
+    vertical-align: baseline;
   }
 
   .links {
