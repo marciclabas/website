@@ -1,0 +1,43 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "marcelc",
+	"compatibility_date": "2026-05-11",
+	"compatibility_flags": ["nodejs_als"],
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"routes": [
+		{
+			"pattern": "marcelc.uk",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.marcelc.uk",
+			"custom_domain": true
+		}
+	],
+	"workers_dev": true,
+	"preview_urls": true,
+	"observability": {
+		"logs": {
+			"enabled": false,
+			"invocation_logs": true
+		}
+	},
+	"env": {
+		"dev": {
+			"assets": {
+				"binding": "ASSETS",
+				"directory": ".svelte-kit/cloudflare"
+			},
+			"routes": [
+				{
+					"pattern": "dev.marcelc.uk",
+					"custom_domain": true
+				}
+			]
+		}
+	}
+}
