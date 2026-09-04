@@ -49,6 +49,7 @@
       lines: [
         'Facultat d’Informàtica de Barcelona. A 9.01/10 overall average, and 9.7/10 across the initial phase.',
         'Paused after the third year to build Moveread full time, and came back to finish the degree in 2025.',
+        'Bachelor thesis on graph neural networks, with Helix at Napptilus. Internship at Schneider Electric.',
       ],
     },
   ]
