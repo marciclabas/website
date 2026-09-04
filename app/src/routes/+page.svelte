@@ -103,8 +103,8 @@
 <section>
   <h2 class="label">Away from the desk</h2>
   <p class="prose quiet">
-    Jazz piano and Catalan folk. Calisthenics, running and volleyball. And enough chess to have
-    once built a company about it.
+    Six years at conservatory, then jazz piano semi-professionally from 2018 to 2023.
+    Calisthenics, and enough chess to have once built a company about it.
   </p>
 </section>
 
