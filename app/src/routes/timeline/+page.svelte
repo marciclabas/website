@@ -9,13 +9,13 @@
 
   const items: Item[] = [
     {
-      period: '2024 —',
+      period: '2025 —',
       name: 'Tribulnation Labs',
       role: 'Founder & CEO',
       href: 'https://tribulnation.com',
       lines: [
         'A proprietary trading firm in Barcelona, trading its own book with a small team and outside capital.',
-        'Began as my own algo trading experiments. Disappointed by CCXT and its alternatives, I wrote my own exchange connectors, execution layer and accounting software; the tooling ended up good enough to run a real book.',
+        'Began in late 2024 as my own algo trading experiments. Disappointed by CCXT and its alternatives, I wrote my own exchange connectors, execution layer and accounting software; the tooling ended up good enough to run a real book.',
         'We open source the stack underneath it: typed exchange clients with full endpoint coverage, a single-interface SDK across venues, and an open registry mapping the same asset across exchanges and chains.',
       ],
     },

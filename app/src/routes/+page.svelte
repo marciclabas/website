@@ -55,10 +55,10 @@
 <section>
   <h2 class="label">Now</h2>
   <p class="prose">
-    Tribulnation started as my own algo trading experiments in 2024. Disappointed by CCXT and
+    Tribulnation began in late 2024 as my own algo trading experiments. Disappointed by CCXT and
     everything like it, I wrote my own exchange connectors, execution layer and accounting
-    software. The tooling got good enough to run a larger book &mdash; so now it does, with a small
-    team and outside capital.
+    software. The tooling got good enough to run a larger book &mdash; so the firm followed in
+    2025, with a small team and outside capital.
   </p>
   <p class="prose">
     We&rsquo;re a trading firm first. Open sourcing what we build is an afterthought, but we do it
