@@ -32,7 +32,6 @@
 		"wrangler": "^4.129.0"
 	},
 	"dependencies": {
-		"@iconify/svelte": "^4.2.0",
-		"svelte-markdown": "^0.4.1"
+		"@iconify/svelte": "^4.2.0"
 	}
 }

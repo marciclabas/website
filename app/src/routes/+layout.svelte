@@ -18,7 +18,7 @@
   <header>
     <a class="wordmark" href="{base}/">Marcel Claramunt</a>
     <nav>
-      <a href="{base}/cv">CV</a>
+      <a href="{base}/timeline">Timeline</a>
       <a href="mailto:marcel@marcelc.uk">Email</a>
     </nav>
   </header>

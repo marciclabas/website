@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from '$app/paths'
+
   type Entry = {
     period: string
     name: string
@@ -19,14 +21,14 @@
       period: '2023 — 2024',
       name: 'Moveread',
       role: 'Solo founder',
-      body: 'AI that read handwritten chess scoresheets. Sold to 15+ tournaments across Spain, France, Germany and Brazil, on a dataset of 500,000 annotated moves I collected myself. Table-structure recognition to 95%, handwriting OCR to 90%, and postprocessing precise enough to score half the games with no human involved at all.',
+      body: 'AI that read handwritten chess scoresheets, sold to tournaments in four countries on a dataset of 500,000 annotated moves I collected myself.',
       href: 'https://moveread.com',
     },
     {
       period: '2023 —',
       name: 'Open source',
       role: 'Maintainer',
-      body: 'pipeteer, a durable execution framework. kv, an async key-value interface for Python. haskellian, cit, and the other pieces I got tired of rewriting.',
+      body: 'pipeteer, kv, haskellian, cit — durable execution, async key-value storage, and the other pieces I got tired of rewriting.',
       href: 'https://github.com/marciclabas',
     },
   ]
@@ -82,6 +84,7 @@
       </li>
     {/each}
   </ol>
+  <p class="more"><a href="{base}/timeline">Full timeline<span class="mark">→</span></a></p>
 </section>
 
 <section>
@@ -216,6 +219,20 @@
   a:hover .mark {
     color: var(--accent);
     transform: translate(1px, -1px);
+  }
+
+  .more {
+    margin-top: 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .more a {
+    color: var(--muted);
+    transition: color 0.15s ease;
+  }
+
+  .more a:hover {
+    color: var(--accent);
   }
 
   .links {

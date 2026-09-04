@@ -25,10 +25,14 @@ build before it reaches Cloudflare.
 
 ### Required GitHub secrets
 
-Both live in the **personal** Cloudflare account (not the Tribulnation one):
+The site lives in the same Cloudflare account as `tribulnation/landing`, so the
+values are identical to the ones already set on that repo:
 
-- `CLOUDFLARE_API_TOKEN` — needs the *Edit Cloudflare Workers* template
+- `CLOUDFLARE_API_TOKEN` — *Edit Cloudflare Workers* template
 - `CLOUDFLARE_ACCOUNT_ID`
+
+Both Workers (`marcelc` and `marcelc-dev`) are created automatically on their
+first deploy — there is nothing to register in the dashboard beforehand.
 
 ### One-time migration off Cloudflare Pages
 
