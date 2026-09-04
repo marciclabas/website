@@ -1,7 +1,6 @@
 <script lang="ts">
   type Item = {
-    /** Omitted where I don't have the real dates — never guessed. */
-    period?: string
+    period: string
     name: string
     role: string
     href?: string
@@ -43,11 +42,13 @@
       ],
     },
     {
+      period: '2020 — 2025',
       name: 'Universitat Politècnica de Catalunya',
       role: 'BS, Computer Science',
       href: '/fib-en.pdf',
       lines: [
-        'Facultat d’Informàtica de Barcelona. Graduated with a 9.01/10 overall average, and 9.7/10 across the initial phase.',
+        'Facultat d’Informàtica de Barcelona. A 9.01/10 overall average, and 9.7/10 across the initial phase.',
+        'Paused after the third year to build Moveread full time, and came back to finish the degree in 2025.',
       ],
     },
   ]
@@ -70,7 +71,7 @@
   {#each items as item}
     <li>
       <div class="meta">
-        {#if item.period}<span class="period">{item.period}</span>{/if}
+        <span class="period">{item.period}</span>
         <span class="role">{item.role}</span>
       </div>
       <div class="entry">
