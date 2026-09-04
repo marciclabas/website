@@ -23,7 +23,7 @@
       period: '2023 — 2024',
       name: 'Moveread',
       role: 'Solo founder',
-      href: 'https://moveread.com',
+      href: 'https://github.com/moveread',
       lines: [
         'An AI service that read handwritten chess scoresheets, sold to 15+ tournaments across Spain, France, Germany and Brazil.',
         'Collected the dataset myself: over 500,000 annotated handwritten moves and 5,000 annotated grid images for table-structure recognition.',
