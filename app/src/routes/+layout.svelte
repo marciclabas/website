@@ -1,46 +1,88 @@
-<script lang='ts'>
+<script lang="ts">
   import './index.css'
-  import Header from './Header.svelte'
-  
-  import { onNavigate } from '$app/navigation'
-  onNavigate((navigation) => {
-    if (!document.startViewTransition) return;
-    
-    return new Promise((resolve) => {
-      document.startViewTransition(async () => {
-        resolve();
-        await navigation.complete
-      })
-    })
-  })
+  import { base } from '$app/paths'
 
-  const { children } = $props();
+  const { children } = $props()
+  const year = new Date().getFullYear()
 </script>
 
-<div class='container'>
-  <Header />
-  {@render children()}
-
-  <!-- Footer -->
-  <div class='footer'>© 2025 Marcel Claramunt Bassegoda. All Rights Reserved.</div>
-</div>
-
 <svelte:head>
-  <title>Marcel Claramunt Bassegoda</title>
-  <meta name='description' content='Marcel Claramunt Bassegoda - Coder, Musician, Athlete. Personal website and portfolio.' />
+  <title>Marcel Claramunt</title>
+  <meta
+    name="description"
+    content="Marcel Claramunt — founder and CEO of Tribulnation Labs, a proprietary trading firm in Barcelona."
+  />
 </svelte:head>
 
+<div class="shell">
+  <header>
+    <a class="wordmark" href="{base}/">Marcel Claramunt</a>
+    <nav>
+      <a href="{base}/cv">CV</a>
+      <a href="mailto:marcel@marcelc.uk">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    {@render children()}
+  </main>
+
+  <footer>
+    <span>Barcelona</span>
+    <span>&copy; {year}</span>
+  </footer>
+</div>
+
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .shell {
+    max-width: var(--page);
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
-  .footer {
-    margin-top: 4rem;
-    padding: 1rem;
-    font-size: 0.9rem;
-    opacity: 0.7;
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.5rem 0 0;
+  }
+
+  .wordmark {
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    letter-spacing: 0.01em;
+  }
+
+  nav {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  nav a {
+    transition: color 0.15s ease;
+  }
+
+  nav a:hover,
+  .wordmark:hover {
+    color: var(--accent);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    padding: 1.75rem 0 3rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 34rem) {
+    header {
+      padding-top: 1.75rem;
+    }
   }
 </style>
