@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths'
+  import MarcelPhoto from '$lib/assets/marcel.jpg?enhanced'
 
   type Entry = {
     period: string
@@ -46,6 +47,9 @@
     trading firm in Barcelona. Before that I built an AI company that read handwritten chess
     scoresheets, and sold it to tournaments in four countries.
   </p>
+  <figure class="portrait">
+    <enhanced:img src={MarcelPhoto} alt="Marcel Claramunt" />
+  </figure>
 </section>
 
 <section>
@@ -145,6 +149,17 @@
 
   .lede a:hover {
     box-shadow: inset 0 -1px 0 var(--accent);
+  }
+
+  .portrait {
+    margin-top: 3rem;
+    max-width: 19rem;
+  }
+
+  .portrait :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .label {
