@@ -30,6 +30,12 @@
 		"dev": {
 			"workers_dev": true,
 			"preview_urls": true,
+			"routes": [
+				{
+					"pattern": "dev.claramunt.eu",
+					"custom_domain": true
+				}
+			],
 			"assets": {
 				"binding": "ASSETS",
 				"directory": ".svelte-kit/cloudflare"
