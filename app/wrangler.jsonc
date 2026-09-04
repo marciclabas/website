@@ -8,16 +8,9 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	"routes": [
-		{
-			"pattern": "marcelc.uk",
-			"custom_domain": true
-		},
-		{
-			"pattern": "www.marcelc.uk",
-			"custom_domain": true
-		}
-	],
+	// No custom domains yet: both environments serve from workers.dev while we
+	// develop, so nothing here touches the live marcelc.uk (still on the
+	// `website` Pages project). Add `routes` back once the domain is settled.
 	"workers_dev": true,
 	"preview_urls": true,
 	"observability": {
@@ -28,16 +21,12 @@
 	},
 	"env": {
 		"dev": {
+			"workers_dev": true,
+			"preview_urls": true,
 			"assets": {
 				"binding": "ASSETS",
 				"directory": ".svelte-kit/cloudflare"
-			},
-			"routes": [
-				{
-					"pattern": "dev.marcelc.uk",
-					"custom_domain": true
-				}
-			]
+			}
 		}
 	}
 }

@@ -25,7 +25,6 @@ jobs:
     timeout-minutes: 15
     environment:
       name: development
-      url: https://dev.marcelc.uk
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,7 +49,6 @@ jobs:
     timeout-minutes: 15
     environment:
       name: production
-      url: https://marcelc.uk
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
