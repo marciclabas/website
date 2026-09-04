@@ -23,7 +23,7 @@
       name: 'Moveread',
       role: 'Solo founder',
       body: 'AI that read handwritten chess scoresheets, sold to tournaments in four countries on a dataset of 500,000 annotated moves I collected myself.',
-      href: 'https://github.com/moveread',
+      href: 'https://moveread.claramunt.eu',
     },
     {
       period: '2023 —',
