@@ -65,7 +65,6 @@
 
 <section class="head">
   <h1>Timeline</h1>
-  <p class="lede">What I&rsquo;ve built, most recent first.</p>
 </section>
 
 <ol class="items">
@@ -98,11 +97,6 @@
 
   h1 {
     font-size: clamp(2.25rem, 6vw, 3rem);
-  }
-
-  .lede {
-    margin-top: 1rem;
-    color: var(--muted);
   }
 
   .items {
