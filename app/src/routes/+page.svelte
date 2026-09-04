@@ -103,8 +103,9 @@
 <section>
   <h2 class="label">Away from the desk</h2>
   <p class="prose quiet">
-    Six years at conservatory, then jazz piano semi-professionally from 2018 to 2023.
-    Calisthenics, and enough chess to have once built a company about it.
+    Six years of classical conservatory training; the jazz I taught myself, and played
+    semi-professionally from 2018 to 2023. Volleyball, calisthenics, and enough chess to
+    have once built a company about it.
   </p>
 </section>
 
