@@ -28,7 +28,7 @@
     {/if}
     <nav>
       <a href="{base}/timeline">Timeline</a>
-      <a href="mailto:marcel@marcelc.uk">Email</a>
+      <a href="mailto:marcel@claramunt.eu">Email</a>
     </nav>
   </header>
 

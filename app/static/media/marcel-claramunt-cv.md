@@ -1,6 +1,6 @@
 # Marcel Claramunt — CV
 
-**AI & Full-Stack Engineer** [[LinkedIn](https://www.linkedin.com/in/marcel-claramunt)] [[GitHub](https://github.com/marciclabas)] [[Website](https://www.marcelc.uk/)] [[Email](mailto:marcel@marcelc.uk)]
+**AI & Full-Stack Engineer** [[LinkedIn](https://www.linkedin.com/in/marcel-claramunt)] [[GitHub](https://github.com/marciclabas)] [[Website](https://www.marcelc.uk/)] [[Email](mailto:marcel@claramunt.eu)]
 
 <div>
   <a href="https://www.marcelc.uk/marcel-claramunt-cv.pdf" target="_blank">Download PDF</a>

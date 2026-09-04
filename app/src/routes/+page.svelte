@@ -116,7 +116,7 @@
 <section class="contact">
   <h2 class="label">Contact</h2>
   <p class="prose">
-    <a class="email" href="mailto:marcel@marcelc.uk">marcel@marcelc.uk</a>
+    <a class="email" href="mailto:marcel@claramunt.eu">marcel@claramunt.eu</a>
   </p>
   <ul class="links inline">
     <li><a href="https://github.com/marciclabas">GitHub</a></li>
