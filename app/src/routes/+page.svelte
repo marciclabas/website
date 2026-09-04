@@ -107,8 +107,9 @@
     2018 to 2023. Now it&rsquo;s jazz piano, for fun.
   </p>
   <p class="prose quiet">
-    Volleyball, calisthenics, and enough chess to have once built a company about it.
-    <a href="https://ratings.fide.com/profile/32086512">2144 FIDE</a>.
+    Volleyball, calisthenics, and enough
+    <a href="https://ratings.fide.com/profile/32086512">chess</a> to have once built a company
+    about it.
   </p>
 </section>
 
