@@ -35,7 +35,8 @@
   ]
 
   const writing = [
-    { label: 'Margining, in four parts', href: 'https://tribulnation.com/blog' },
+    { label: 'Margining, in four parts', href: 'https://tribulnation.com/blog/margining1' },
+    { label: 'The Tribulnation blog', href: 'https://tribulnation.com/blog' },
     { label: 'Essays on Medium', href: 'https://medium.com/@marcelclaramunt' },
   ]
 </script>
