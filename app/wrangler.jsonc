@@ -8,9 +8,16 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	// No custom domains yet: both environments serve from workers.dev while we
-	// develop, so nothing here touches the live marcelc.uk (still on the
-	// `website` Pages project). Add `routes` back once the domain is settled.
+	// Apex only. www is handled by a Cloudflare Redirect Rule rather than a
+	// second custom domain, so there is one canonical hostname instead of two
+	// serving identical content. marcelc.uk stays on the `website` Pages
+	// project until this is verified, then redirects here.
+	"routes": [
+		{
+			"pattern": "claramunt.eu",
+			"custom_domain": true
+		}
+	],
 	"workers_dev": true,
 	"preview_urls": true,
 	"observability": {

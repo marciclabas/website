@@ -15,15 +15,10 @@ yarn dev
 Deploys run from GitHub Actions (`.github/workflows/deploy.yml`), mirroring
 [`tribulnation/landing`](https://github.com/tribulnation/landing):
 
-| Branch | Environment   | Worker         |
-| ------ | ------------- | -------------- |
-| `dev`  | `development` | `marcelc-dev`  |
-| `main` | `production`  | `marcelc`      |
-
-Both currently serve from `workers.dev`. **No custom domain is attached yet**,
-so neither branch affects the live `marcelc.uk`, which is still served by the
-old `website` Pages project. Deploying `main` is therefore safe: it will not
-take the site live.
+| Branch | Environment   | Worker        | Serves                  |
+| ------ | ------------- | ------------- | ----------------------- |
+| `dev`  | `development` | `marcelc-dev` | `*.workers.dev`         |
+| `main` | `production`  | `marcelc`     | `https://claramunt.eu`  |
 
 Every deploy is gated on `yarn check` (`svelte-check`), so a type error fails the
 build before it reaches Cloudflare.
@@ -39,14 +34,20 @@ values are identical to the ones already set on that repo:
 Both Workers (`marcelc` and `marcelc-dev`) are created automatically on their
 first deploy — there is nothing to register in the dashboard beforehand.
 
-### Going live (later)
+### Going live
 
-When the domain is settled, add `routes` back to `wrangler.jsonc`, then:
+The apex is attached to the production Worker. Before the first `main` deploy:
 
-1. Disconnect the `website` Pages project's Git integration.
-2. Remove its custom domains — Workers and Pages cannot both hold the same hostname.
-3. Deploy `main`; Wrangler claims the domains for the Worker.
-4. Once healthy, delete the Pages project.
+1. **Delete the existing `claramunt.eu` A/AAAA records.** They point at an origin
+   with no valid TLS (hence the 525) and will conflict with the custom domain.
+2. Deploy `main`. Wrangler claims the apex and creates the routing itself.
+3. Add a Redirect Rule for `www.claramunt.eu` -> `claramunt.eu` (301).
+
+`marcelc.uk` is untouched by this and keeps serving from the old `website` Pages
+project. Once the new site is verified, redirect `marcelc.uk/*` to
+`claramunt.eu/*` and retire the Pages project. Keep the domain registered:
+`repogpt.marcelc.uk` is a separate subdomain and is unaffected, and the CV PDF
+hardcodes `marcelc.uk` links.
 
 The Worker is named `marcelc` rather than `website` to avoid colliding with the
 existing Pages project of that name while both exist.
