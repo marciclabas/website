@@ -15,7 +15,7 @@
   <title>Marcel Claramunt</title>
   <meta
     name="description"
-    content="Marcel Claramunt — founder and CEO of Tribulnation Labs, a proprietary trading firm in Barcelona."
+    content="Marcel Claramunt — founder and CEO of Tribulnation Labs, which builds software for crypto traders."
   />
 </svelte:head>
 
