@@ -15,7 +15,7 @@
       period: '2025 —',
       name: 'Tribulnation Labs',
       role: 'Founder & CEO',
-      body: 'A proprietary trading firm in Barcelona. We trade our own book and open source the stack underneath it.',
+      body: 'Software for crypto traders: Terminal for market data and portfolios, Litmus for accounting and taxes, and open-source exchange connectors underneath both.',
       href: 'https://tribulnation.com',
     },
     {
@@ -44,9 +44,9 @@
 <section class="hero">
   <h1>Marcel Claramunt</h1>
   <p class="lede">
-    Founder and CEO of <a href="https://tribulnation.com">Tribulnation Labs</a>, a proprietary
-    trading firm in Barcelona. Before that I built an AI company that read handwritten chess
-    scoresheets, and sold it to tournaments in four countries.
+    Founder and CEO of <a href="https://tribulnation.com">Tribulnation Labs</a>. We build
+    software for crypto traders, in Barcelona. Before that I built an AI company that read
+    handwritten chess scoresheets, and sold it to tournaments in four countries.
   </p>
   <figure class="portrait">
     <enhanced:img src={MarcelPhoto} alt="Marcel Claramunt" />
@@ -58,12 +58,15 @@
   <p class="prose">
     Tribulnation began in late 2024 as my own algo trading experiments. Disappointed by CCXT and
     everything like it, I wrote my own exchange connectors, execution layer and accounting
-    software. The tooling got good enough to run a larger book &mdash; so the firm followed in
-    2025, with a small team and outside capital.
+    software. In 2025 that tooling became the company.
   </p>
   <p class="prose">
-    We&rsquo;re a trading firm first. Open sourcing what we build is an afterthought, but we do it
-    anyway: independent traders should get to run on the same infrastructure we do.
+    Terminal covers market data, opportunities and portfolio tracking. Litmus does crypto
+    accounting and taxes. The exchange connectors underneath are open source: typed clients for
+    each exchange, and one SDK across all of them.
+  </p>
+  <p class="prose">
+    We still trade our own capital on the same stack. It&rsquo;s how we know the software works.
   </p>
 </section>
 
